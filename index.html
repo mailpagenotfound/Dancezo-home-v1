@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danzo Dance Academy — Where Passion Meets Performance</title>
+  <meta name="description" content="Enter a world of movement, energy, and artistic expression. Danzo Dance Academy offers professional training in contemporary, hip-hop, ballet, and traditional dance forms.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=7.0">
+  <script src="app.js?v=7.0" defer></script>
+</head>
+<body>
+  <!-- Global Paper Grain Overlay -->
+  <div class="paper-grain-overlay"></div>
+
+  <!-- FIXED FLOATING NAVIGATION -->
+  <header class="main-header">
+    <div class="logo-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 100 100" class="svg-logo">
+            <polygon points="50,10 90,80 10,80" fill="none" stroke="currentColor" stroke-width="4"/>
+            <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="3"/>
+            <line x1="50" y1="10" x2="50" y2="80" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="logo-text">DANZO</span>
+      </a>
+    </div>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle Navigation Menu">
+      <span class="menu-btn-inner">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+      </span>
+    </button>
+  </header>
+
+  <!-- IMMERSIVE FULL-SCREEN MENU OVERLAY -->
+  <div class="menu-overlay" id="menu-overlay">
+    <div class="menu-overlay-bg"></div>
+    <div class="menu-content">
+      <div class="menu-left">
+        <div class="menu-tagline">DANZO DANCE ACADEMY</div>
+        <div class="menu-info">
+          <p class="menu-address">120 Theatre Blvd, Art District<br>New York, NY 10011</p>
+          <p class="menu-contact">info@danzodance.com<br>+1 (212) 555-0199</p>
+        </div>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#" class="nav-link" data-text="01. HOME"><span>01.</span> HOME</a></li>
+          <li><a href="#" class="nav-link" data-text="02. ACADEMY"><span>02.</span> ACADEMY</a></li>
+          <li><a href="#" class="nav-link" data-text="03. PERFORMANCES"><span>03.</span> PERFORMANCES</a></li>
+          <li><a href="#" class="nav-link" data-text="04. CLASSES"><span>04.</span> CLASSES</a></li>
+          <li><a href="#" class="nav-link" data-text="05. CONTACT"><span>05.</span> CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas-container">
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- LAYER 1: VINTAGE BACKGROUND ILLUSTRATIONS & EMERALD GRADIENT -->
+    <div class="parallax-layer layer-bg" data-speed="0.1">
+      <div class="emerald-glow"></div>
+      <div class="vignette"></div>
+    </div>
+
+    <!-- LAYER 2: DANCE POSTERS COLLAGE -->
+    <div class="parallax-layer layer-collage" data-speed="0.25">
+      <img src="assets/dance_collage_bg.png" alt="Dance Collage Background" class="collage-bg-img">
+      <div class="collage-overlay"></div>
+    </div>
+
+    <!-- LAYER 3: DECORATIVE DANCE ELEMENTS (SPOTLIGHTS, SILHOUETTES, CURTAINS) -->
+    <div class="parallax-layer layer-decor" data-speed="0.4">
+      <div class="spotlight spotlight-left"></div>
+      <div class="spotlight spotlight-right"></div>
+      <div class="decorative-curtain curtain-left"></div>
+      <div class="decorative-curtain curtain-right"></div>
+      
+      <!-- Custom SVG Floating Music Notes & Flourishes -->
+      <svg class="floating-svg-decor decor-1" viewBox="0 0 100 100">
+        <path d="M40 70 A 15 15 0 1 1 25 55 A 15 15 0 1 1 40 70 Z" fill="none" stroke="var(--color-gold)" stroke-width="2"/>
+        <path d="M40 70 L 40 20 L 70 30 L 70 80" fill="none" stroke="var(--color-gold)" stroke-width="2"/>
+        <path d="M70 80 A 10 10 0 1 1 60 70 A 10 10 0 1 1 70 80 Z" fill="var(--color-gold)"/>
+      </svg>
+      <svg class="floating-svg-decor decor-2" viewBox="0 0 100 100">
+        <path d="M30 40 C 45 40, 55 20, 70 20 C 85 20, 85 40, 70 60 C 55 80, 45 80, 30 80 C 15 80, 15 60, 30 40 Z" fill="none" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.6"/>
+      </svg>
+    </div>
+
+    <!-- LAYER 4: CENTERPIECE DANCERS -->
+    <div class="parallax-layer layer-dancers" data-speed="0.65">
+      <div class="dancer-container contemporary-dancer">
+        <img src="assets/contemporary_dancer_art.png?v=6.0" alt="Contemporary Dancer" class="dancer-img">
+        <div class="dancer-shadow"></div>
+      </div>
+      <div class="dancer-container ballet-dancer">
+        <img src="assets/ballet_dancer.png?v=6.0" alt="Ballet Dancer" class="dancer-img">
+        <div class="dancer-shadow"></div>
+      </div>
+      <div class="dancer-container bharatanatyam-silhouette">
+        <img src="assets/bharatanatyam_silhouette.png?v=6.0" alt="Bharatanatyam Silhouette" class="dancer-img">
+        <div class="dancer-shadow"></div>
+      </div>
+      <div class="dancer-container jazz-dancer">
+        <img src="assets/jazz_dancer.png?v=6.0" alt="Jazz Dancer" class="dancer-img">
+        <div class="dancer-shadow"></div>
+      </div>
+      <div class="dancer-container hiphop-dancer">
+        <img src="assets/hiphop_dancer_art.png?v=6.0" alt="Hip Hop Dancer" class="dancer-img">
+        <div class="dancer-shadow"></div>
+      </div>
+    </div>
+
+    <!-- LAYER 5: FOREGROUND PARTICLES AND ACCENTS -->
+    <div class="parallax-layer layer-foreground" data-speed="0.35">
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="scroll-indicator">
+      <span class="scroll-text">EXPLORE THE STAGE</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+
+    <!-- TORN PAPER TRANSITION BOTTOM DIVIDER -->
+    <div class="torn-paper-divider">
+      <svg class="torn-paper-svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,0 
+                 C120,45 240,15 360,35 
+                 C480,55 600,10 720,40 
+                 C840,70 960,20 1080,30 
+                 C1200,40 1320,65 1440,20 
+                 L1440,120 L0,120 Z" 
+              fill="var(--color-highlight)" />
+        <path d="M0,0 
+                 C130,35 250,5 370,45 
+                 C490,25 610,35 730,15 
+                 C850,55 970,10 1090,40 
+                 C1210,15 1330,50 1440,5 
+                 L1440,120 L0,120 Z" 
+              fill="none" stroke="var(--color-secondary)" stroke-width="2" opacity="0.3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SUBSEQUENT SECTION (EMERGING FROM TORN PAPER) -->
+  <section class="academy-intro" id="academy-intro">
+    <div class="container">
+      
+      <!-- HERO TITLE POSITIONED BELOW THE TORN PAPER TRANSITION -->
+      <div class="hero-content-below">
+        <div class="title-container">
+          <h1 class="hero-title-editorial" id="hero-title">
+            <span class="title-line line-1">DANZO DANCE</span>
+            <span class="title-line line-2">ACADEMY</span>
+          </h1>
+        </div>
+        <div class="subtitle-container">
+          <p class="hero-subtitle">Where Passion Meets Performance</p>
+          <div class="subtitle-accent-line"></div>
+          <p class="hero-taglines">Train &bull; Perform &bull; Inspire</p>
+        </div>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-text-side">
+          <span class="section-tag">WELCOME TO THE MOVEMENT</span>
+          <h2 class="section-heading">A Tastefully Designed Creator's Space</h2>
+          <p class="intro-paragraph font-outfit">
+            Danzo Dance Academy is a one-of-a-kind premium dance studio and a tastefully designed creators' space. We believe that dance is more than movement—it's a theatrical dialogue, an expression of the soul, and a powerful community. From the classical precision of tradition to the raw energy of freestyle, our academy bridges the gap between pure artistic discipline and spectacular contemporary stage production.
+          </p>
+          
+          <div class="stats-container">
+            <div class="stat-card">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Dance Disciplines</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">14+ Years</span>
+              <span class="stat-label">Teaching Heritage</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Dedicated Team</span>
+            </div>
+          </div>
+          
+          <a href="#demo-booking" class="btn-primary">
+            <span class="btn-text">BOOK A DEMO CLASS</span>
+            <span class="btn-arrow">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/>
+                <polyline points="12,5 19,12 12,19" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+        
+        <div class="intro-visual-side">
+          <div class="visual-card-wrapper">
+            <div class="glass-photo-card card-1">
+              <div class="card-inner">
+                <div class="card-tag">CONTEMPORARY</div>
+                <h3 class="card-title">Fluidity & Form</h3>
+              </div>
+            </div>
+            <div class="glass-photo-card card-2">
+              <div class="card-inner">
+                <div class="card-tag">STREET</div>
+                <h3 class="card-title">Rhythm & Power</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES & CURRICULUM SECTION -->
+  <section class="performance-highlights" id="courses">
+    <div class="theater-background"></div>
+    <div class="container">
+      <div class="highlights-header">
+        <h2 class="section-heading centered">In-House &amp; Online Courses</h2>
+        <p class="section-subheading centered">Discover our signature curriculum designed for amateur and professional dancers.</p>
+      </div>
+
+      <div class="showcase-grid course-grid-4">
+        <!-- Course 1 -->
+        <div class="showcase-item">
+          <div class="showcase-img-box">
+            <div class="showcase-img-placeholder" style="background: linear-gradient(135deg, #14382F, #0B0B0B)">
+              <div class="svg-icon-wrap">
+                <!-- Classical Bell / Salangai / Anklet SVG -->
+                <svg viewBox="0 0 100 100" width="80" height="80">
+                  <circle cx="50" cy="45" r="20" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+                  <circle cx="50" cy="45" r="8" fill="var(--color-secondary)"/>
+                  <path d="M30,80 Q50,70 70,80" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+                  <line x1="50" y1="25" x2="50" y2="10" stroke="var(--color-secondary)" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="showcase-details">
+              <span class="showcase-category">IN-HOUSE &bull; ONLINE</span>
+              <h4 class="showcase-title">Classical &amp; Semi-Classical</h4>
+              <p class="showcase-desc">Rooted in tradition, rhythm, and graceful expressions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="showcase-item">
+          <div class="showcase-img-box">
+            <div class="showcase-img-placeholder" style="background: linear-gradient(135deg, #8B1E2D, #0B0B0B)">
+              <div class="svg-icon-wrap">
+                <!-- Hip Hop Crown / Graffiti SVG -->
+                <svg viewBox="0 0 100 100" width="80" height="80">
+                  <path d="M20,70 L30,30 L50,50 L70,30 L80,70 Z" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+                  <circle cx="20" cy="70" r="3" fill="var(--color-secondary)"/>
+                  <circle cx="80" cy="70" r="3" fill="var(--color-secondary)"/>
+                  <circle cx="30" cy="30" r="3" fill="var(--color-secondary)"/>
+                  <circle cx="70" cy="30" r="3" fill="var(--color-secondary)"/>
+                  <circle cx="50" cy="50" r="3" fill="var(--color-secondary)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="showcase-details">
+              <span class="showcase-category">IN-HOUSE &bull; ONLINE</span>
+              <h4 class="showcase-title">Hip-Hop &amp; Street Dance</h4>
+              <p class="showcase-desc">Covering old-school foundation to new generation styles.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="showcase-item">
+          <div class="showcase-img-box">
+            <div class="showcase-img-placeholder" style="background: linear-gradient(135deg, #D4AF37, #14382F)">
+              <div class="svg-icon-wrap">
+                <!-- Contemporary abstract shape SVG -->
+                <svg viewBox="0 0 100 100" width="80" height="80">
+                  <path d="M50,15 C70,15 85,35 85,55 C85,75 50,85 50,85 C50,85 15,75 15,55 C15,35 30,15 50,15 Z" fill="none" stroke="var(--color-highlight)" stroke-width="2"/>
+                  <path d="M50,25 Q65,40 50,55 Q35,70 50,85" fill="none" stroke="var(--color-highlight)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="showcase-details">
+              <span class="showcase-category">IN-HOUSE &bull; ONLINE</span>
+              <h4 class="showcase-title">Contemporary &amp; Bollywood</h4>
+              <p class="showcase-desc">Stay in shape while expressing high-energy theatrical dance.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="showcase-item">
+          <div class="showcase-img-box">
+            <div class="showcase-img-placeholder" style="background: linear-gradient(135deg, #0B0B0B, #14382F)">
+              <div class="svg-icon-wrap">
+                <!-- Yoga / Meditation lotus shape SVG -->
+                <svg viewBox="0 0 100 100" width="80" height="80">
+                  <path d="M50,20 C40,40 20,50 50,80 C80,50 60,40 50,20 Z" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+                  <path d="M50,40 C35,50 30,60 50,80 C70,60 65,50 50,40 Z" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="showcase-details">
+              <span class="showcase-category">WORKSHOPS &bull; WELLNESS</span>
+              <h4 class="showcase-title">Freestyle &amp; Wellness</h4>
+              <p class="showcase-desc">Dance-Fit Zumba, BollyHIIT, and Movement Yoga Meditation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="center-btn-wrap" style="text-align: center; margin-top: 50px;">
+        <a href="#demo-booking" class="btn-primary">
+          <span class="btn-text">VIEW UPCOMING WORKSHOPS</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TEAM / EXPERTS SECTION -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header-wrap">
+        <span class="section-tag centered">OUR EXPERTS</span>
+        <h2 class="section-heading centered">Meet Our Founders &amp; Directors</h2>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+          <div class="team-img-placeholder">
+            <!-- Stylized abstract sketch/icon representing Preethi -->
+            <svg viewBox="0 0 100 100" width="100" height="100" class="team-svg-icon">
+              <circle cx="50" cy="30" r="15" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+              <path d="M25,75 C25,55 75,55 75,75" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+              <path d="M50,15 L50,5 M35,22 L30,17 M65,22 L70,17" stroke="var(--color-secondary)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Preethi Sathyanandham</h3>
+            <span class="team-role">Founder &amp; Director</span>
+            <p class="team-bio">
+              A professional dancer with over 14 years of rigorous classical dance training under the esteemed guidance of Smt. Ambika Shivaraj. She brings structural excellence and technical depth to our classical programs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card">
+          <div class="team-img-placeholder">
+            <!-- Stylized abstract sketch/icon representing Naema -->
+            <svg viewBox="0 0 100 100" width="100" height="100" class="team-svg-icon">
+              <circle cx="50" cy="30" r="15" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+              <path d="M25,75 C25,55 75,55 75,75" fill="none" stroke="var(--color-secondary)" stroke-width="2"/>
+              <path d="M40,45 L35,50 M60,45 L65,50" stroke="var(--color-secondary)" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Naema Saleem</h3>
+            <span class="team-role">Founder &amp; Director</span>
+            <p class="team-bio">
+              Professional dancer, freestyle enthusiast, and self-proclaimed accidental hip-hop addict. Her high-energy instruction methodology defines our street and contemporary styles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENT SUCCESS STORIES (THE CRITIQUES) -->
+  <section class="success-stories-section" id="success-stories">
+    <div class="container">
+      <div class="section-header-wrap">
+        <span class="section-tag centered">THE CRITIQUES</span>
+        <h2 class="section-heading centered">Student Success &amp; Press Reviews</h2>
+      </div>
+      
+      <div class="critiques-grid">
+        <div class="critique-item paper-card">
+          <div class="critique-header">
+            <span class="critique-source font-serif">THE BROADWAY JOURNAL</span>
+            <span class="critique-rating">★★★★★</span>
+          </div>
+          <p class="critique-quote">
+            "A spectacular showcase of movement. Danzo Dance Academy remains the premier training ground for classical and contemporary innovators. Their alumni grace the most prestigious stages globally."
+          </p>
+          <span class="critique-author">— Julian Vane, Chief Dance Critic</span>
+        </div>
+
+        <div class="critique-item paper-card">
+          <div class="critique-header">
+            <span class="critique-source font-serif">THE LONDON PERFORMER</span>
+            <span class="critique-rating">★★★★★</span>
+          </div>
+          <p class="critique-quote">
+            "Naema Saleem's street choreography methods are electric, bridging the gap between underground street dance battles and full-scale theatrical productions with absolute visual genius."
+          </p>
+          <span class="critique-author">— Clara Dupont, Cultural Reviewer</span>
+        </div>
+
+        <div class="critique-item paper-card">
+          <div class="critique-header">
+            <span class="critique-source font-serif">METROPOLITAN GAZETTE</span>
+            <span class="critique-rating">★★★★★</span>
+          </div>
+          <p class="critique-quote">
+            "Preethi Sathyanandham's classical ballet and Bharatanatyam training structure is a masterclass in precision, discipline, and emotional expression. A true luxury performing arts institution."
+          </p>
+          <span class="critique-author">— Marcus Sterling, Performing Arts Critic</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE STAGE PERFORMANCE DETAILS -->
+  <section class="stage-info-section" id="the-stage">
+    <div class="stage-overlay-bg"></div>
+    <div class="container">
+      <div class="stage-info-grid">
+        <div class="stage-text-side">
+          <span class="section-tag">THE STAGE</span>
+          <h2 class="section-heading font-serif">Tell a Story Without Speaking a Word</h2>
+          <p class="stage-paragraph font-outfit">
+            At Danzo Dance Academy, we believe that an artist’s superpower is to tell the world a story without having to speak a single word. To perform in front of a crowd will always be an artist’s true reward. 
+          </p>
+          <p class="stage-paragraph font-outfit">
+            We provide an opportunity for every student and faculty member in our academy to showcase their dance journey on stage with regular street dance battles, quarterly studio showcases, and a grand annual theater showcase.
+          </p>
+        </div>
+        <div class="stage-graphics-side">
+          <div class="vintage-poster-frame">
+            <div class="poster-inner">
+              <span class="poster-tag">DANZO SPECIAL</span>
+              <h3 class="poster-title font-serif">ANNUAL STAGE SHOWCASE</h3>
+              <div class="poster-line"></div>
+              <p class="poster-details">BATTLES &bull; SHOWCASES &bull; LIVE PERFORMANCE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION (THE ARCHIVES) -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header-wrap">
+        <span class="section-tag centered">THE ARCHIVES</span>
+        <h2 class="section-heading centered">A Visual Chronicle of Our Performances</h2>
+      </div>
+
+      <div class="gallery-masonry">
+        <div class="gallery-item-wrapper frame-1">
+          <div class="vintage-frame-gold">
+            <div class="frame-corner corner-tl"></div>
+            <div class="frame-corner corner-tr"></div>
+            <div class="frame-corner corner-bl"></div>
+            <div class="frame-corner corner-br"></div>
+            <img src="assets/dance_luxury_collage.png" alt="Luxury Theatrical Performance" class="gallery-img">
+            <div class="gallery-label font-serif">Classic Theatrical Ensemble</div>
+          </div>
+        </div>
+        
+        <div class="gallery-item-wrapper frame-2">
+          <div class="vintage-frame-gold">
+            <div class="frame-corner corner-tl"></div>
+            <div class="frame-corner corner-tr"></div>
+            <div class="frame-corner corner-bl"></div>
+            <div class="frame-corner corner-br"></div>
+            <img src="assets/dance_collage_bg.png" alt="Vintage Dance Poster Backdrop" class="gallery-img">
+            <div class="gallery-label font-serif">Vintage Theatrical Backdrop</div>
+          </div>
+        </div>
+
+        <div class="gallery-item-wrapper frame-3">
+          <div class="vintage-frame-gold">
+            <div class="frame-corner corner-tl"></div>
+            <div class="frame-corner corner-tr"></div>
+            <div class="frame-corner corner-bl"></div>
+            <div class="frame-corner corner-br"></div>
+            <img src="assets/ballet_dancer.png?v=6.0" alt="Classical Ballet Performance" class="gallery-img">
+            <div class="gallery-label font-serif">Classic Ballet en Pointe</div>
+          </div>
+        </div>
+
+        <div class="gallery-item-wrapper frame-4">
+          <div class="vintage-frame-gold">
+            <div class="frame-corner corner-tl"></div>
+            <div class="frame-corner corner-tr"></div>
+            <div class="frame-corner corner-bl"></div>
+            <div class="frame-corner corner-br"></div>
+            <img src="assets/jazz_dancer.png?v=6.0" alt="Vintage Jazz Performance" class="gallery-img">
+            <div class="gallery-label font-serif">Jazz Rhythm Showcase</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header-wrap">
+        <span class="section-tag centered">TESTIMONIALS</span>
+        <h2 class="section-heading centered">Check Out What Our Clients Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">&ldquo;</div>
+          <p class="testimonial-text">
+            Took a dance class here, the studio is roomy, well lit, and the wallpaper very colorful. The waiting area has good comfortable seating arrangements which is rare in a dance studio.
+          </p>
+          <div class="star-rating">★★★★★</div>
+          <div class="client-info">
+            <h4 class="client-name">Afsa Yusuf</h4>
+            <span class="client-date">October 2025</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">&ldquo;</div>
+          <p class="testimonial-text">
+            This place is a gem for those who truly want to take up dancing. The instructors Preethi and Naema are really professional. Love the place, vibe, and the fun sessions it has to offer!
+          </p>
+          <div class="star-rating">★★★★★</div>
+          <div class="client-info">
+            <h4 class="client-name">Akash G</h4>
+            <span class="client-date">April 2025</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">&ldquo;</div>
+          <p class="testimonial-text">
+            My wedding dance was choreographed by Preethi. She did a fabulous work though we had a time constraint of just two days. The choreography was absolutely graceful and easy to grasp for beginners.
+          </p>
+          <div class="star-rating">★★★★★</div>
+          <div class="client-info">
+            <h4 class="client-name">Rahul Thiruvengadam</h4>
+            <span class="client-date">May 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK DEMO SECTION -->
+  <section class="booking-section" id="demo-booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-text">
+          <span class="section-tag">START YOUR JOURNEY</span>
+          <h2 class="section-heading">Join Us Today</h2>
+          <p class="booking-para">
+            Redefine your dance experience. Sign up for a demo class with our founders and experts today.
+          </p>
+        </div>
+        <div class="booking-form-container">
+          <form class="premium-booking-form" onsubmit="event.preventDefault(); alert('Thank you! Your demo class booking has been received.');">
+            <div class="form-row-2">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required class="form-input">
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email Address" required class="form-input">
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-group">
+                <input type="tel" placeholder="Phone Number" required class="form-input">
+              </div>
+              <div class="form-group">
+                <select required class="form-input select-input">
+                  <option value="" disabled selected>Select Course</option>
+                  <option value="Bollywood">Bollywood &amp; Contemporary</option>
+                  <option value="Classical">Classical</option>
+                  <option value="Hip Hop">Hip-Hop &amp; Street</option>
+                  <option value="Freestyle">Freestyle &amp; Wellness</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Write a message" rows="3" class="form-input textarea-input"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span class="submit-text">BOOK DANCE CLASS DEMO</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMY FOOTER -->
+  <footer class="academy-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Danzo Dance Academy. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
