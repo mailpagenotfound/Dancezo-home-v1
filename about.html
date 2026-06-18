@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Danzo Dance Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Syncopate:wght@700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/about.js"></script>
+</head>
+<body>
+  <!-- Global Viewport Outer Border -->
+  <div class="viewport-border"></div>
+
+  <!-- Global Paper Grain Overlay -->
+  <div class="paper-grain"></div>
+
+  <!-- Loading Animation Transition -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">DANZO</div>
+  </div>
+
+  <!-- FIXED FLOATING NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">
+      <span class="logo-gold">D</span>ANZO DANCE ACADEMY
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item active"><a href="/about.html">About Us</a></li>
+        <li class="nav-item"><a href="/classes.html">Our Classes</a></li>
+        <li class="nav-item"><a href="/workshops.html">Workshops</a></li>
+        <li class="nav-item"><a href="/students.html">Our Students</a></li>
+        <li class="nav-item"><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-hamburger-btn" aria-label="Open Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- ABOUT HERO SECTION -->
+  <section class="section-wrapper" id="about-hero" style="background-color: var(--color-bg-darker); overflow: hidden; padding-top: 180px;">
+    <!-- spotlight overlay lights -->
+    <div class="spotlight-glow" style="top: -10%; left: 30%;"></div>
+    
+    <div class="container" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: center;">
+      <div>
+        <span class="section-tag">OUR LEGACY &amp; VISION</span>
+        <h1 class="section-heading" style="font-size: clamp(38px, 6vw, 76px); margin-bottom: 25px;">
+          Crafting Dancers.<br><span style="color: var(--color-gold); font-family: var(--font-serif); font-style: italic; font-weight: 400;">Building Confidence.</span>
+        </h1>
+        <p class="section-subheading" style="margin-bottom: 0;">
+          Founded by professional directors Preethi Sathyanandham and Naema Saleem, Danzo Dance Academy is designed as a luxury performing arts workshop hall where artistic vision meets rigorous technical discipline.
+        </p>
+      </div>
+      <div style="width: 100%; height: 450px; position: relative;">
+        <!-- Simulated 3D light-mesh card container -->
+        <div class="glass-panel" style="width: 100%; height: 100%; overflow: hidden; position: relative; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+          <svg viewBox="0 0 100 100" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0.08;" stroke="var(--color-gold)" fill="none" stroke-width="0.5">
+            <line x1="0" y1="0" x2="100" y2="100"/>
+            <line x1="100" y1="0" x2="0" y2="100"/>
+            <circle cx="50" cy="50" r="30"/>
+          </svg>
+          <img src="assets/dance_collage_bg.png" alt="Theatre Studio Archives" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.35; filter: contrast(1.15) brightness(0.9);">
+          
+          <div style="position: absolute; bottom: 30px; left: 30px; z-index: 10;">
+            <span style="font-size: 10px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: var(--color-gold); display: block; margin-bottom: 5px;">ESTABLISHED</span>
+            <h3 style="font-size: 32px; font-family: var(--font-serif); font-weight: 900; line-height: 1;">2018 GUILD</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: OUR STORY TIMELINE -->
+  <section class="section-wrapper" id="our-story" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 100px;">
+        <span class="section-tag">CHRONOLOGICAL ARCHIVE</span>
+        <h2 class="section-heading">Our Story</h2>
+        <p class="section-subheading" style="margin: 0 auto;">Walk through the memories, achievements, and milestones that built our academy legacy.</p>
+      </div>
+
+      <!-- Alternating timeline track -->
+      <div class="timeline-track-wrapper">
+        
+        <!-- Timeline Row 1 -->
+        <div class="timeline-row timeline-item">
+          <div class="timeline-node"></div>
+          <div class="glass-panel timeline-col-content">
+            <span style="font-family: var(--font-serif); font-size: 24px; font-weight: 900; color: var(--color-gold); display: block; margin-bottom: 10px;">Academy Beginning (2018)</span>
+            <p style="font-size: 15px; line-height: 1.7; color: var(--color-grey-light);">
+              Danzo began as a creative space dedicated to classical aesthetics and freestyle movement experimentation. Our goal was to create an environment where instruction matched the standards of premium theater shows.
+            </p>
+          </div>
+          <div class="timeline-col-visual">
+            <img src="assets/dance_collage_bg.png" alt="Academy Foundation Rehearsals">
+          </div>
+        </div>
+
+        <!-- Timeline Row 2 -->
+        <div class="timeline-row timeline-item">
+          <div class="timeline-node"></div>
+          <div class="glass-panel timeline-col-content">
+            <span style="font-family: var(--font-serif); font-size: 24px; font-weight: 900; color: var(--color-gold); display: block; margin-bottom: 10px;">The First Batch (2020)</span>
+            <p style="font-size: 15px; line-height: 1.7; color: var(--color-grey-light);">
+              We welcomed our first ensemble of dedicated students, focusing on foundation curves in ballet, traditional classical mudras, and raw hip-hop grooves.
+            </p>
+          </div>
+          <div class="timeline-col-visual">
+            <img src="assets/contemporary_dancer.png" alt="First Ensemble Group">
+          </div>
+        </div>
+
+        <!-- Timeline Row 3 -->
+        <div class="timeline-row timeline-item">
+          <div class="timeline-node"></div>
+          <div class="glass-panel timeline-col-content">
+            <span style="font-family: var(--font-serif); font-size: 24px; font-weight: 900; color: var(--color-gold); display: block; margin-bottom: 10px;">Major Concert Performances (2022)</span>
+            <p style="font-size: 15px; line-height: 1.7; color: var(--color-grey-light);">
+              Danzo students performed on stage at national theaters, establishing our signature style of live theatrical stagecraft and lighting production.
+            </p>
+          </div>
+          <div class="timeline-col-visual">
+            <img src="assets/dance_luxury_collage.png" alt="Concert Stage Performances">
+          </div>
+        </div>
+
+        <!-- Timeline Row 4 -->
+        <div class="timeline-row timeline-item">
+          <div class="timeline-node"></div>
+          <div class="glass-panel timeline-col-content">
+            <span style="font-family: var(--font-serif); font-size: 24px; font-weight: 900; color: var(--color-gold); display: block; margin-bottom: 10px;">Awards &amp; Present Day (2026)</span>
+            <p style="font-size: 15px; line-height: 1.7; color: var(--color-grey-light);">
+              Awarded the Performing Arts Guild trophy for choreography excellence. Today, we continue to bridge classical precision and modern street energy.
+            </p>
+          </div>
+          <div class="timeline-col-visual">
+            <img src="assets/jazz_dancer.png" alt="Awards and Celebration">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: VISION & MISSION -->
+  <section class="section-wrapper" id="vision-mission" style="background-color: var(--color-bg-darker); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0; position: relative; overflow: hidden;">
+    <div class="spotlight-glow" id="cursor-spotlight" style="top: 0; left: 0; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s;"></div>
+
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+      
+      <!-- Vision Panel -->
+      <div class="glass-panel floating-card" style="padding: 50px; border-radius: 12px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="section-tag" style="color: var(--color-gold-light);">THE HORIZON</span>
+          <h3 style="font-size: 36px; font-family: var(--font-serif); font-weight: 900; margin-bottom: 25px;">Our Vision</h3>
+          <p style="font-size: 16px; line-height: 1.8; color: var(--color-white-dim); opacity: 0.85;">
+            To be a leading global creative institution that pioneers the fusion of classical heritage with contemporary performing arts, modeling spaces that encourage confidence, performance, and artistic dialogue.
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 40px; padding-top: 20px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold);">
+          CREATIVITY &bull; PRECISION &bull; ENERGY
+        </div>
+      </div>
+
+      <!-- Mission Panel -->
+      <div class="glass-panel floating-card" style="padding: 50px; border-radius: 12px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="section-tag" style="color: var(--color-gold-light);">THE ASSIGNMENT</span>
+          <h3 style="font-size: 36px; font-family: var(--font-serif); font-weight: 900; margin-bottom: 25px;">Our Mission</h3>
+          <p style="font-size: 16px; line-height: 1.8; color: var(--color-white-dim); opacity: 0.85;">
+            To deliver professional-grade training that challenges and nurtures. We cultivate safe spaces for amateurs to learn movement and for professional stage performers to push the boundaries of modern choreography.
+          </p>
+        </div>
+        <div style="border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 40px; padding-top: 20px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold);">
+          INCLUSIVITY &bull; DISCIPLINE &bull; ARTISTRY
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: MEET THE INSTRUCTORS -->
+  <section class="section-wrapper" id="instructors" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">THE MASTERMINDS</span>
+        <h2 class="section-heading">Meet The Instructors</h2>
+        <p class="section-subheading" style="margin: 0 auto;">Learn from the professional founders and directors guiding the academy curriculum.</p>
+      </div>
+
+      <!-- Instructors Grid -->
+      <div class="instructor-grid" id="instructors-grid">
+        
+        <!-- Instructor 1: Preethi -->
+        <div class="glass-panel instructor-card">
+          <div class="instructor-spotlight" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0; background: radial-gradient(circle at 30% 50%, rgba(212,175,55,0.15) 0%, transparent 60%); transition: opacity 0.4s; pointer-events: none;"></div>
+          
+          <div class="instructor-portrait-box">
+            <img src="assets/ballet_dancer.png" alt="Preethi Sathyanandham Portrait">
+          </div>
+          <div class="instructor-info">
+            <h3 style="font-size: 26px; font-weight: 700; margin-bottom: 5px;">Preethi Sathyanandham</h3>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold); display: block; margin-bottom: 15px;">Director &bull; Classical Specialist</span>
+            <p style="font-size: 14px; line-height: 1.6;">
+              Brings over 14 years of rigorous classical choreography under the guidance of Smt. Ambika Shivaraj. Preethi guides our traditional fusion programs.
+            </p>
+            <div class="instructor-socials">
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructor 2: Naema -->
+        <div class="glass-panel instructor-card">
+          <div class="instructor-spotlight" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0; background: radial-gradient(circle at 30% 50%, rgba(212,175,55,0.15) 0%, transparent 60%); transition: opacity 0.4s; pointer-events: none;"></div>
+          
+          <div class="instructor-portrait-box">
+            <img src="assets/hiphop_dancer.png" alt="Naema Saleem Portrait">
+          </div>
+          <div class="instructor-info">
+            <h3 style="font-size: 26px; font-weight: 700; margin-bottom: 5px;">Naema Saleem</h3>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold); display: block; margin-bottom: 15px;">Director &bull; Freestyle Lead</span>
+            <p style="font-size: 14px; line-height: 1.6;">
+              Self-proclaimed accidental hip-hop addict and street choreography specialist. Naema translates heavy bass rhythm beats into energetic performances.
+            </p>
+            <div class="instructor-socials">
+              <a href="#">Instagram</a>
+              <a href="#">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURTAIN DIVIDER -->
+  <div class="curtain-divider">
+    <svg class="curtain-svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,0 C120,40 240,60 360,60 C480,60 600,20 720,50 C840,80 960,30 1080,40 C1200,50 1320,60 1440,0 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- SHARED GUILD FOOTER -->
+  <footer class="guild-footer">
+    <div class="container">
+      <div class="footer-guild-name">THE DANZO PERFORMING ARTS GUILD</div>
+      <p class="footer-meta">&copy; 2026 Danzo Dance Academy. Crafting Cinematic Dancers. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes &amp; Schedule — Danzo Dance Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Syncopate:wght@700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/classes.js"></script>
+</head>
+<body>
+  <!-- Global Viewport Outer Border -->
+  <div class="viewport-border"></div>
+
+  <!-- Global Paper Grain Overlay -->
+  <div class="paper-grain"></div>
+
+  <!-- Loading Animation Transition -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">DANZO</div>
+  </div>
+
+  <!-- FIXED FLOATING NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">
+      <span class="logo-gold">D</span>ANZO DANCE ACADEMY
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/about.html">About Us</a></li>
+        <li class="nav-item active"><a href="/classes.html">Our Classes</a></li>
+        <li class="nav-item"><a href="/workshops.html">Workshops</a></li>
+        <li class="nav-item"><a href="/students.html">Our Students</a></li>
+        <li class="nav-item"><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-hamburger-btn" aria-label="Open Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- CLASSES HERO SECTION -->
+  <section class="section-wrapper" id="classes-hero" style="background-color: var(--color-bg-darker); overflow: hidden; padding-top: 180px;">
+    <!-- spotlight overlay lights -->
+    <div class="spotlight-glow" style="top: -10%; left: 10%;"></div>
+
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+      <div>
+        <span class="section-tag">CURRICULUM ARCHITECTURE</span>
+        <h1 class="section-heading" style="font-size: clamp(38px, 6vw, 76px); margin-bottom: 25px;">
+          Find Your<br><span style="color: var(--color-gold); font-family: var(--font-serif); font-style: italic; font-weight: 400;">Rhythm</span>
+        </h1>
+        <p class="section-subheading" style="margin-bottom: 0;">
+          From foundational body curves to professional-grade stage coordination, our academy curriculum provides custom pacing for every skillset.
+        </p>
+      </div>
+      <div style="width: 100%; height: 350px; position: relative;">
+        <!-- Simulated 3D studio background -->
+        <div class="glass-panel" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <svg viewBox="0 0 100 100" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0.1;" stroke="var(--color-gold)" fill="none" stroke-width="0.5">
+            <line x1="50" y1="0" x2="50" y2="100"/>
+            <polygon points="50,20 80,80 20,80"/>
+          </svg>
+          <img src="assets/dance_luxury_collage.png" alt="Danzo Dance Academy Grid" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.25; filter: contrast(1.1) brightness(0.85);">
+          
+          <div style="z-index: 10; text-align: center;">
+            <h3 style="font-size: 28px; font-family: var(--font-serif); font-weight: 900; margin-bottom: 10px;">STUDIO ROOM A</h3>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold);">120 Theatre Blvd</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CLASS SHOWCASE -->
+  <section class="section-wrapper" id="class-showcase" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">CHOOSE YOUR DISCIPLINE</span>
+        <h2 class="section-heading">Available Programs</h2>
+      </div>
+
+      <!-- Class Cards Grid -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;" class="cards-grid">
+        
+        <!-- Class 1 -->
+        <div class="glass-panel class-stage-card" style="border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; height: 500px; transition: transform 0.6s var(--transition-smooth);">
+          <div style="height: 180px; overflow: hidden; position: relative;">
+            <img src="assets/contemporary_dancer.png" alt="Contemporary Flow" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.15);">
+            <div style="position: absolute; bottom: 15px; left: 20px; z-index: 10;">
+              <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 2px;">Ensemble A</span>
+              <h3 style="font-size: 24px; font-weight: 700; color: var(--color-white);">Contemporary Flow</h3>
+            </div>
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(21,21,21,1) 0%, rgba(21,21,21,0.2) 60%, transparent 100%);"></div>
+          </div>
+          <div style="padding: 0 30px 30px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <p style="font-size: 14px; margin-bottom: 20px; color: var(--color-grey-light); margin-top: 15px;">Focuses on core balance release, floor transitions, and gravity controls.</p>
+            <div>
+              <div style="font-size: 12px; margin-bottom: 20px; border-top: 1px dashed rgba(212, 175, 55, 0.15); padding-top: 15px; display: flex; flex-direction: column; gap: 5px; color: var(--color-white-dim);">
+                <div style="display: flex; justify-content: space-between;">
+                  <span><strong>AGE GROUP:</strong> 16+</span>
+                  <span><strong>LEVEL:</strong> Intermediate</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span><strong>DURATION:</strong> 90 Mins</span>
+                </div>
+              </div>
+              <a href="/contact.html" class="btn-primary" style="width: 100%; text-align: center;">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 2 -->
+        <div class="glass-panel class-stage-card" style="border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; height: 500px; transition: transform 0.6s var(--transition-smooth);">
+          <div style="height: 180px; overflow: hidden; position: relative;">
+            <img src="assets/hiphop_dancer.png" alt="Street Break Foundation" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.15);">
+            <div style="position: absolute; bottom: 15px; left: 20px; z-index: 10;">
+              <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 2px;">Ensemble B</span>
+              <h3 style="font-size: 24px; font-weight: 700; color: var(--color-white);">Street Break</h3>
+            </div>
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(21,21,21,1) 0%, rgba(21,21,21,0.2) 60%, transparent 100%);"></div>
+          </div>
+          <div style="padding: 0 30px 30px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <p style="font-size: 14px; margin-bottom: 20px; color: var(--color-grey-light); margin-top: 15px;">Covering body lock control, pop dynamics, rhythm coordination, and street styles.</p>
+            <div>
+              <div style="font-size: 12px; margin-bottom: 20px; border-top: 1px dashed rgba(212, 175, 55, 0.15); padding-top: 15px; display: flex; flex-direction: column; gap: 5px; color: var(--color-white-dim);">
+                <div style="display: flex; justify-content: space-between;">
+                  <span><strong>AGE GROUP:</strong> 14+</span>
+                  <span><strong>LEVEL:</strong> Beg - Adv</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span><strong>DURATION:</strong> 120 Mins</span>
+                </div>
+              </div>
+              <a href="/contact.html" class="btn-primary" style="width: 100%; text-align: center;">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 3 -->
+        <div class="glass-panel class-stage-card" style="border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; height: 500px; transition: transform 0.6s var(--transition-smooth);">
+          <div style="height: 180px; overflow: hidden; position: relative;">
+            <img src="assets/ballet_dancer.png" alt="Classical Ballet" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) contrast(1.15);">
+            <div style="position: absolute; bottom: 15px; left: 20px; z-index: 10;">
+              <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 2px;">Ensemble C</span>
+              <h3 style="font-size: 24px; font-weight: 700; color: var(--color-white);">Classical Ballet</h3>
+            </div>
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(21,21,21,1) 0%, rgba(21,21,21,0.2) 60%, transparent 100%);"></div>
+          </div>
+          <div style="padding: 0 30px 30px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <p style="font-size: 14px; margin-bottom: 20px; color: var(--color-grey-light); margin-top: 15px;">Strict technical alignment posture, posture expression, and classical footwork.</p>
+            <div>
+              <div style="font-size: 12px; margin-bottom: 20px; border-top: 1px dashed rgba(212, 175, 55, 0.15); padding-top: 15px; display: flex; flex-direction: column; gap: 5px; color: var(--color-white-dim);">
+                <div style="display: flex; justify-content: space-between;">
+                  <span><strong>AGE GROUP:</strong> All Ages</span>
+                  <span><strong>LEVEL:</strong> Professional</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span><strong>DURATION:</strong> 90 Mins</span>
+                </div>
+              </div>
+              <a href="/contact.html" class="btn-primary" style="width: 100%; text-align: center;">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: INTERACTIVE SCHEDULE -->
+  <section class="section-wrapper" id="schedule-section" style="background-color: var(--color-bg-darker); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">WEEKLY LEADING SYSTEM</span>
+        <h2 class="section-heading">Weekly Schedule</h2>
+      </div>
+
+      <!-- Schedule Table UI -->
+      <div class="glass-panel" style="padding: 30px; border-radius: 12px; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; min-width: 800px;" id="schedule-table">
+          <thead>
+            <tr style="border-bottom: 1px solid rgba(212, 175, 55, 0.2); color: var(--color-gold); font-size: 12px; letter-spacing: 2px; text-transform: uppercase;">
+              <th style="padding: 20px;">Time Block</th>
+              <th style="padding: 20px;">Monday</th>
+              <th style="padding: 20px;">Wednesday</th>
+              <th style="padding: 20px;">Friday</th>
+              <th style="padding: 20px;">Saturday</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 14px; color: var(--color-white-dim);">
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.03); transition: background-color 0.3s;" class="schedule-row">
+              <td style="padding: 20px; font-weight: 700; color: var(--color-gold);">08:00 AM - 09:30 AM</td>
+              <td style="padding: 20px;">Yoga &amp; Flow</td>
+              <td style="padding: 20px;">Yoga &amp; Flow</td>
+              <td style="padding: 20px;">Yoga &amp; Flow</td>
+              <td style="padding: 20px; font-style: italic; opacity: 0.5;">Studio Maintenance</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.03); transition: background-color 0.3s;" class="schedule-row">
+              <td style="padding: 20px; font-weight: 700; color: var(--color-gold);">10:00 AM - 12:00 PM</td>
+              <td style="padding: 20px;">Classical Ballet</td>
+              <td style="padding: 20px; font-style: italic; opacity: 0.5;">Closed rehearsal</td>
+              <td style="padding: 20px;">Classical Ballet</td>
+              <td style="padding: 20px;">Bharatanatyam</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.03); transition: background-color 0.3s;" class="schedule-row">
+              <td style="padding: 20px; font-weight: 700; color: var(--color-gold);">04:00 PM - 06:00 PM</td>
+              <td style="padding: 20px;">Contemporary Flow</td>
+              <td style="padding: 20px;">Contemporary Flow</td>
+              <td style="padding: 20px;">Contemporary Flow</td>
+              <td style="padding: 20px;">Street Break</td>
+            </tr>
+            <tr style="transition: background-color 0.3s;" class="schedule-row">
+              <td style="padding: 20px; font-weight: 700; color: var(--color-gold);">06:30 PM - 08:30 PM</td>
+              <td style="padding: 20px;">Street Break</td>
+              <td style="padding: 20px;">Bollywood Fusion</td>
+              <td style="padding: 20px;">Street Break</td>
+              <td style="padding: 20px;">Live Battles Jam</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY TRAIN WITH US -->
+  <section class="section-wrapper" id="why-train" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">THE DANZO ADVANTAGE</span>
+        <h2 class="section-heading">Why Train With Us</h2>
+      </div>
+
+      <!-- Benefits Grid -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;">
+        
+        <!-- Benefit 1 -->
+        <div class="glass-panel" style="padding: 30px; border-radius: 8px; text-align: center;">
+          <div style="width: 50px; height: 50px; border: 1px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg viewBox="0 0 100 100" width="25" height="25" stroke="var(--color-gold)" fill="none" stroke-width="2">
+              <polygon points="50,15 63,40 90,40 70,60 78,85 50,70 22,85 30,60 10,40 37,40"/>
+            </svg>
+          </div>
+          <h4 style="font-size: 18px; margin-bottom: 10px;">Master Trainers</h4>
+          <p style="font-size: 13px;">Direct mentorship from Preethi, Naema, and guest specialists.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="glass-panel" style="padding: 30px; border-radius: 8px; text-align: center;">
+          <div style="width: 50px; height: 50px; border: 1px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg viewBox="0 0 100 100" width="25" height="25" stroke="var(--color-gold)" fill="none" stroke-width="2">
+              <path d="M20,30 L80,30 L80,80 L20,80 Z M30,30 L30,20 L70,20 L70,30"/>
+            </svg>
+          </div>
+          <h4 style="font-size: 18px; margin-bottom: 10px;">Stage Exposure</h4>
+          <p style="font-size: 13px;">Battles, showcases, and annual concert performances.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="glass-panel" style="padding: 30px; border-radius: 8px; text-align: center;">
+          <div style="width: 50px; height: 50px; border: 1px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg viewBox="0 0 100 100" width="25" height="25" stroke="var(--color-gold)" fill="none" stroke-width="2">
+              <path d="M20,40 Q50,20 80,40 L80,70 Q50,90 20,70 Z"/>
+            </svg>
+          </div>
+          <h4 style="font-size: 18px; margin-bottom: 10px;">Guild Certificate</h4>
+          <p style="font-size: 13px;">Progress tracking with verified academy certifications.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="glass-panel" style="padding: 30px; border-radius: 8px; text-align: center;">
+          <div style="width: 50px; height: 50px; border: 1px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg viewBox="0 0 100 100" width="25" height="25" stroke="var(--color-gold)" fill="none" stroke-width="2">
+              <circle cx="50" cy="50" r="30"/>
+              <line x1="50" y1="20" x2="50" y2="80"/>
+              <line x1="20" y1="50" x2="80" y2="50"/>
+            </svg>
+          </div>
+          <h4 style="font-size: 18px; margin-bottom: 10px;">Custom Pace</h4>
+          <p style="font-size: 13px;">Individual tracking and posture advice in every session.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURTAIN DIVIDER -->
+  <div class="curtain-divider">
+    <svg class="curtain-svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,0 C120,40 240,60 360,60 C480,60 600,20 720,50 C840,80 960,30 1080,40 C1200,50 1320,60 1440,0 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- SHARED GUILD FOOTER -->
+  <footer class="guild-footer">
+    <div class="container">
+      <div class="footer-guild-name">THE DANZO PERFORMING ARTS GUILD</div>
+      <p class="footer-meta">&copy; 2026 Danzo Dance Academy. Crafting Cinematic Dancers. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Students &amp; Success — Danzo Dance Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Syncopate:wght@700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/students.js"></script>
+</head>
+<body>
+  <!-- Global Viewport Outer Border -->
+  <div class="viewport-border"></div>
+
+  <!-- Global Paper Grain Overlay -->
+  <div class="paper-grain"></div>
+
+  <!-- Loading Animation Transition -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">DANZO</div>
+  </div>
+
+  <!-- FIXED FLOATING NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">
+      <span class="logo-gold">D</span>ANZO DANCE ACADEMY
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/about.html">About Us</a></li>
+        <li class="nav-item"><a href="/classes.html">Our Classes</a></li>
+        <li class="nav-item"><a href="/workshops.html">Workshops</a></li>
+        <li class="nav-item active"><a href="/students.html">Our Students</a></li>
+        <li class="nav-item"><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-hamburger-btn" aria-label="Open Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- STUDENTS HERO -->
+  <section class="section-wrapper" id="students-hero" style="background-color: var(--color-bg-darker); overflow: hidden; padding-top: 180px;">
+    <!-- spotlight overlay lights -->
+    <div class="spotlight-glow" style="top: -10%; left: 30%;"></div>
+
+    <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center;">
+      <div>
+        <span class="section-tag">TESTIMONY OF GRACE</span>
+        <h1 class="section-heading" style="font-size: clamp(38px, 6vw, 76px); margin-bottom: 25px;">
+          Our Greatest Achievement Is<br><span style="color: var(--color-gold); font-family: var(--font-serif); font-style: italic; font-weight: 400;">Our Students</span>
+        </h1>
+        <p class="section-subheading" style="margin-bottom: 0;">
+          Witness the movement, progress, and stage confidence built by our students. Their dedication forms the heart of our academy community.
+        </p>
+      </div>
+      <div style="width: 100%; height: 350px; position: relative;">
+        <!-- Stage frame simulator -->
+        <div class="glass-panel" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <svg viewBox="0 0 100 100" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0.1;" stroke="var(--color-gold)" fill="none" stroke-width="0.5">
+            <line x1="10" y1="90" x2="90" y2="10"/>
+            <circle cx="50" cy="50" r="25"/>
+          </svg>
+          <img src="assets/dance_luxury_collage.png" alt="Student Showcase Canvas" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.25; filter: contrast(1.15) brightness(0.85);">
+          
+          <div style="z-index: 10; text-align: center;">
+            <h3 style="font-size: 28px; font-family: var(--font-serif); font-weight: 900; margin-bottom: 10px;">GUILD ALUMNI</h3>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold);">100% Class Completion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: STUDENT TRANSFORMATIONS -->
+  <section class="section-wrapper" id="transformations" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">TRANSFORMATION JOURNEYS</span>
+        <h2 class="section-heading">Before &bull; After Milestones</h2>
+      </div>      <!-- Success Stories Wrapper -->
+      <div class="success-stories-wrapper">
+        
+        <!-- Story 1 -->
+        <div class="success-story-row">
+          <div class="success-story-content">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 15px;">Akash's Freestyle Journey</span>
+            <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 20px; font-family: var(--font-serif);">From Beginner to Stage Battle Winner</h3>
+            <p style="font-size: 15px; line-height: 1.8; margin-bottom: 30px; color: var(--color-grey-light);">
+              "Akash joined with basic coordination skills. After 6 months of intensive popping isolations and freestyle battle jams under Naema Saleem, he won our studio showcase freestyle trophy."
+            </p>
+            <div style="border-top: 1px dashed rgba(212, 175, 55, 0.15); padding-top: 15px; font-size: 12px; color: var(--color-gold); font-weight: 700;">
+              DISCIPLINE: HIP-HOP &bull; TIME: 6 MONTHS
+            </div>
+          </div>
+          <div class="success-story-visual">
+            <img src="assets/hiphop_dancer.png" alt="Akash's Freestyle Showcase">
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="success-story-row">
+          <div class="success-story-content">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 15px;">Rahul's Classical Integration</span>
+            <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 20px; font-family: var(--font-serif);">Posture Correction &amp; Ensemble Coordination</h3>
+            <p style="font-size: 15px; line-height: 1.8; margin-bottom: 30px; color: var(--color-grey-light);">
+              "Rahul wanted to refine his posture alignment and classical balance control. Training under Preethi Sathyanandham gave him the core stability to join the main concert showcase."
+            </p>
+            <div style="border-top: 1px dashed rgba(212, 175, 55, 0.15); padding-top: 15px; font-size: 12px; color: var(--color-gold); font-weight: 700;">
+              DISCIPLINE: CLASSICAL FUSION &bull; TIME: 8 MONTHS
+            </div>
+          </div>
+          <div class="success-story-visual">
+            <img src="assets/ballet_dancer.png" alt="Rahul's Classical Integration Showcase">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: STUDENT GALLERY -->
+  <section class="section-wrapper" id="student-gallery-section" style="background-color: var(--color-bg-darker); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">THE PLAYBILL ARCHIVE</span>
+        <h2 class="section-heading">Student Gallery</h2>
+      </div>
+
+      <!-- Pinterest-style Asymmetric Masonry Grid -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;" id="pinterest-grid">
+        
+        <!-- Image Box 1 (Tall) -->
+        <div class="glass-panel gallery-item-wrapper" style="padding: 15px; border-radius: 8px; grid-row: span 2; display: flex; flex-direction: column; transition: transform 0.5s var(--transition-bounce);">
+          <img src="assets/dance_luxury_collage.png" alt="Student Performance Ensemble" style="width: 100%; height: 420px; object-fit: cover; border-radius: 6px; filter: sepia(0.2) contrast(1.1);">
+          <div style="margin-top: 15px; text-align: center; font-size: 13px; font-weight: 700; color: var(--color-gold);">Concert Live Sync</div>
+        </div>
+
+        <!-- Image Box 2 -->
+        <div class="glass-panel gallery-item-wrapper" style="padding: 15px; border-radius: 8px; display: flex; flex-direction: column; transition: transform 0.5s var(--transition-bounce);">
+          <img src="assets/dance_collage_bg.png" alt="Rehearsal Space" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; filter: sepia(0.2) contrast(1.1);">
+          <div style="margin-top: 15px; text-align: center; font-size: 13px; font-weight: 700; color: var(--color-gold);">Studio Practice Session</div>
+        </div>
+
+        <!-- Image Box 3 (Tall) -->
+        <div class="glass-panel gallery-item-wrapper" style="padding: 15px; border-radius: 8px; grid-row: span 2; display: flex; flex-direction: column; transition: transform 0.5s var(--transition-bounce);">
+          <img src="assets/dance_luxury_collage.png" alt="Contemporary Dancer Silhouette" style="width: 100%; height: 420px; object-fit: cover; border-radius: 6px; filter: sepia(0.2) contrast(1.1);">
+          <div style="margin-top: 15px; text-align: center; font-size: 13px; font-weight: 700; color: var(--color-gold);">Solo Stage Portrait</div>
+        </div>
+
+        <!-- Image Box 4 -->
+        <div class="glass-panel gallery-item-wrapper" style="padding: 15px; border-radius: 8px; display: flex; flex-direction: column; transition: transform 0.5s var(--transition-bounce);">
+          <img src="assets/dance_collage_bg.png" alt="Stage Battles Jams" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; filter: sepia(0.2) contrast(1.1);">
+          <div style="margin-top: 15px; text-align: center; font-size: 13px; font-weight: 700; color: var(--color-gold);">Street Battles Jam</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: 3D FLOATING TESTIMONIALS -->
+  <section class="section-wrapper" id="testimonials-section" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0; position: relative;">
+    <!-- Ambient gold spotlight overlay -->
+    <div class="spotlight-glow" style="top: -20%; right: 10%;"></div>
+
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">TESTIMONIALS OF THE GUILD</span>
+        <h2 class="section-heading">What Our Students Say</h2>
+      </div>
+
+      <!-- Testimonials grid (3D floating style) -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;" id="3d-testimonials-grid">
+        
+        <!-- Card 1 -->
+        <div class="glass-panel rotate-card" style="padding: 40px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; height: 380px; transition: transform 0.6s var(--transition-bounce); transform-style: preserve-3d; perspective: 1000px; cursor: pointer;">
+          <div>
+            <div style="font-size: 60px; font-family: var(--font-serif); line-height: 1; color: var(--color-gold); opacity: 0.15; position: absolute; top: 15px; left: 25px;">&ldquo;</div>
+            <p style="font-size: 15px; line-height: 1.7; font-style: italic; z-index: 10; position: relative;">
+              Took a dance class here, the studio is roomy, well lit, and the wallpaper very colorful. The waiting area has good comfortable seating arrangements.
+            </p>
+          </div>
+          <div style="border-top: 1px solid rgba(212, 175, 55, 0.12); padding-top: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--color-white);">Afsa Yusuf</h4>
+            <span style="font-size: 11px; color: var(--color-grey-light);">STUDENT &bull; OCTOBER 2025</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel rotate-card" style="padding: 40px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; height: 380px; transition: transform 0.6s var(--transition-bounce); transform-style: preserve-3d; perspective: 1000px; cursor: pointer;">
+          <div>
+            <div style="font-size: 60px; font-family: var(--font-serif); line-height: 1; color: var(--color-gold); opacity: 0.15; position: absolute; top: 15px; left: 25px;">&ldquo;</div>
+            <p style="font-size: 15px; line-height: 1.7; font-style: italic; z-index: 10; position: relative;">
+              This place is a gem for those who truly want to take up dancing. The instructors Preethi and Naema are really professional. Love the vibe and the fun sessions it has to offer!
+            </p>
+          </div>
+          <div style="border-top: 1px solid rgba(212, 175, 55, 0.12); padding-top: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--color-white);">Akash G</h4>
+            <span style="font-size: 11px; color: var(--color-grey-light);">STUDENT &bull; APRIL 2025</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel rotate-card" style="padding: 40px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; height: 380px; transition: transform 0.6s var(--transition-bounce); transform-style: preserve-3d; perspective: 1000px; cursor: pointer;">
+          <div>
+            <div style="font-size: 60px; font-family: var(--font-serif); line-height: 1; color: var(--color-gold); opacity: 0.15; position: absolute; top: 15px; left: 25px;">&ldquo;</div>
+            <p style="font-size: 15px; line-height: 1.7; font-style: italic; z-index: 10; position: relative;">
+              My wedding dance was choreographed by Preethi. She did a fabulous work though we had a time constraint of just two days. The choreography was absolutely graceful.
+            </p>
+          </div>
+          <div style="border-top: 1px solid rgba(212, 175, 55, 0.12); padding-top: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--color-white);">Rahul Thiruvengadam</h4>
+            <span style="font-size: 11px; color: var(--color-grey-light);">STUDENT &bull; MAY 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: ANIMATED COUNTERS -->
+  <section class="section-wrapper" id="achievements-section" style="background-color: var(--color-bg-darker); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 120px 0;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; text-align: center;">
+      
+      <!-- Counter 1 -->
+      <div class="counter-box">
+        <span style="font-family: var(--font-serif); font-size: clamp(40px, 6vw, 72px); font-weight: 900; color: var(--color-gold); line-height: 1;" class="counter-val" data-target="500">0</span>
+        <p style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; color: var(--color-white-dim);">Students Trained</p>
+      </div>
+
+      <!-- Counter 2 -->
+      <div class="counter-box">
+        <span style="font-family: var(--font-serif); font-size: clamp(40px, 6vw, 72px); font-weight: 900; color: var(--color-gold); line-height: 1;" class="counter-val" data-target="15">0</span>
+        <p style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; color: var(--color-white-dim);">Awards Won</p>
+      </div>
+
+      <!-- Counter 3 -->
+      <div class="counter-box">
+        <span style="font-family: var(--font-serif); font-size: clamp(40px, 6vw, 72px); font-weight: 900; color: var(--color-gold); line-height: 1;" class="counter-val" data-target="80">0</span>
+        <p style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; color: var(--color-white-dim);">Stage Performances</p>
+      </div>
+
+      <!-- Counter 4 -->
+      <div class="counter-box">
+        <span style="font-family: var(--font-serif); font-size: clamp(40px, 6vw, 72px); font-weight: 900; color: var(--color-gold); line-height: 1;" class="counter-val" data-target="45">0</span>
+        <p style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; color: var(--color-white-dim);">Workshops Conducted</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CURTAIN DIVIDER -->
+  <div class="curtain-divider">
+    <svg class="curtain-svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,0 C120,40 240,60 360,60 C480,60 600,20 720,50 C840,80 960,30 1080,40 C1200,50 1320,60 1440,0 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- SHARED GUILD FOOTER -->
+  <footer class="guild-footer">
+    <div class="container">
+      <div class="footer-guild-name">THE DANZO PERFORMING ARTS GUILD</div>
+      <p class="footer-meta">&copy; 2026 Danzo Dance Academy. Crafting Cinematic Dancers. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

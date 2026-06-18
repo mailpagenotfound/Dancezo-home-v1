@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops &amp; Masterclasses — Danzo Dance Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Syncopate:wght@700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/workshops.js"></script>
+</head>
+<body>
+  <!-- Global Viewport Outer Border -->
+  <div class="viewport-border"></div>
+
+  <!-- Global Paper Grain Overlay -->
+  <div class="paper-grain"></div>
+
+  <!-- Loading Animation Transition -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">DANZO</div>
+  </div>
+
+  <!-- FIXED FLOATING NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">
+      <span class="logo-gold">D</span>ANZO DANCE ACADEMY
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/about.html">About Us</a></li>
+        <li class="nav-item"><a href="/classes.html">Our Classes</a></li>
+        <li class="nav-item active"><a href="/workshops.html">Workshops</a></li>
+        <li class="nav-item"><a href="/students.html">Our Students</a></li>
+        <li class="nav-item"><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-hamburger-btn" aria-label="Open Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- WORKSHOPS HERO -->
+  <section class="section-wrapper" id="workshops-hero" style="background-color: var(--color-bg-darker); overflow: hidden; padding-top: 180px;">
+    <!-- Concert lights moving gradients -->
+    <div class="spotlight-glow" style="top: -20%; left: 20%; background: radial-gradient(circle, var(--color-gold) 0%, rgba(215, 38, 56, 0.2) 50%, transparent 100%); width: 60vw; opacity: 0.15;"></div>
+    
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+      <div>
+        <span class="section-tag">FESTIVALS &amp; GUEST MENTORS</span>
+        <h1 class="section-heading" style="font-size: clamp(38px, 6vw, 76px); margin-bottom: 25px;">
+          Learn From<br><span style="color: var(--color-gold); font-family: var(--font-serif); font-style: italic; font-weight: 400;">Industry Experts</span>
+        </h1>
+        <p class="section-subheading" style="margin-bottom: 0;">
+          Join our curated concert workshops and intense masterclass sessions hosted by leading choreographers from around the world.
+        </p>
+      </div>
+      <div style="width: 100%; height: 350px; position: relative;">
+        <!-- Stage overlay simulation -->
+        <div class="glass-panel" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <svg viewBox="0 0 100 100" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0.1;" stroke="var(--color-gold)" fill="none" stroke-width="0.5">
+            <line x1="0" y1="50" x2="100" y2="50"/>
+            <polygon points="50,10 90,50 50,90 10,50"/>
+          </svg>
+          <img src="assets/dance_collage_bg.png" alt="Concert Stage Grid" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.25; filter: contrast(1.15) brightness(0.85);">
+          
+          <div style="z-index: 10; text-align: center;">
+            <h3 style="font-size: 28px; font-family: var(--font-serif); font-weight: 900; margin-bottom: 10px;">MASTERSTAGE HALL</h3>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--color-gold);">Stage Lights Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: UPCOMING WORKSHOPS -->
+  <section class="section-wrapper" id="upcoming-workshops" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 80px;">
+        <span class="section-tag">LIMITED ADMISSION LEDGERS</span>
+        <h2 class="section-heading">Upcoming Masterclasses</h2>
+      </div>
+
+      <!-- Workshop Cards Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;" class="workshops-list">
+        
+        <!-- Workshop 1 -->
+        <div class="glass-panel upcoming-workshop-card" style="border-radius: 12px; position: relative; overflow: hidden; height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+          <!-- Photo Background -->
+          <div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: 0;">
+            <img src="assets/contemporary_dancer.png" alt="Contemporary Lift Dynamics" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.35) contrast(1.15);">
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(11,11,11,0.95) 0%, rgba(11,11,11,0.4) 60%, transparent 100%);"></div>
+          </div>
+          
+          <!-- Curtain animation background reveal overlay -->
+          <div class="curtain-bg-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: #151515; z-index: 2; pointer-events: none;"></div>
+
+          <div style="z-index: 10; padding: 40px 40px 0;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 3px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 15px;">24 JUNE 2026</span>
+            <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 15px; line-height: 1.2; color: var(--color-white);">Contemporary Lift Dynamics</h3>
+            <p style="font-size: 15px; color: var(--color-white-dim); opacity: 0.8;">
+              An intensive masterclass focusing on partner lifting techniques, counterbalance, and gravity-defying floor work.
+            </p>
+          </div>
+
+          <div style="z-index: 10; padding: 0 40px 40px;">
+            <div style="font-size: 14px; margin-bottom: 30px; border-top: 1px solid rgba(212, 175, 55, 0.25); padding-top: 20px; color: var(--color-white-dim);">
+              <p style="margin-bottom: 5px; color: var(--color-gold); font-weight: 700;">MENTOR: Preethi Sathyanandham</p>
+              <span>TIME: 10:00 AM - 02:00 PM</span>
+            </div>
+            <a href="/contact.html" class="btn-primary" style="width: 100%; text-align: center;">Register Admission</a>
+          </div>
+        </div>
+
+        <!-- Workshop 2 -->
+        <div class="glass-panel upcoming-workshop-card" style="border-radius: 12px; position: relative; overflow: hidden; height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+          <!-- Photo Background -->
+          <div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: 0;">
+            <img src="assets/hiphop_dancer.png" alt="Street Freestyle Isolation" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.35) contrast(1.15);">
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(11,11,11,0.95) 0%, rgba(11,11,11,0.4) 60%, transparent 100%);"></div>
+          </div>
+          
+          <!-- Curtain animation background reveal overlay -->
+          <div class="curtain-bg-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: #151515; z-index: 2; pointer-events: none;"></div>
+
+          <div style="z-index: 10; padding: 40px 40px 0;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 3px; color: var(--color-gold); text-transform: uppercase; display: block; margin-bottom: 15px;">08 JULY 2026</span>
+            <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 15px; line-height: 1.2; color: var(--color-white);">Street Freestyle Isolation</h3>
+            <p style="font-size: 15px; color: var(--color-white-dim); opacity: 0.8;">
+              Learn isolation mechanics, body waves, popping grooves, and musicality control from the street.
+            </p>
+          </div>
+
+          <div style="z-index: 10; padding: 0 40px 40px;">
+            <div style="font-size: 14px; margin-bottom: 30px; border-top: 1px solid rgba(212, 175, 55, 0.25); padding-top: 20px; color: var(--color-white-dim);">
+              <p style="margin-bottom: 5px; color: var(--color-gold); font-weight: 700;">MENTOR: Naema Saleem</p>
+              <span>TIME: 02:00 PM - 06:00 PM</span>
+            </div>
+            <a href="/contact.html" class="btn-primary" style="width: 100%; text-align: center;">Register Admission</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PREVIOUS WORKSHOPS -->
+  <section class="section-wrapper" id="previous-section" style="background-color: var(--color-bg-darker); border-top: 1px solid rgba(255, 255, 255, 0.03); padding: 160px 0; overflow: hidden;">
+    <div style="text-align: center; margin-bottom: 80px; padding: 0 5%;">
+      <span class="section-tag">CINEMATIC ARCHIVES</span>
+      <h2 class="section-heading">Masterclass Archive Gallery</h2>
+    </div>
+
+    <!-- Infinite horizontal slider structure -->
+    <div class="horizontal-scroll-container" style="display: flex; gap: 40px; width: 200%; transform: translateX(0);" id="horizontal-gallery">
+      
+      <!-- Photo Slide 1 -->
+      <div class="glass-panel gallery-slide" style="width: 420px; height: 280px; flex-shrink: 0; overflow: hidden; position: relative;">
+        <img src="assets/dance_luxury_collage.png" alt="Masterclass Moments" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.1);">
+        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
+          <h4 style="font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Behind The Scenes</h4>
+          <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold);">MAY 2026</span>
+        </div>
+      </div>
+
+      <!-- Photo Slide 2 -->
+      <div class="glass-panel gallery-slide" style="width: 420px; height: 280px; flex-shrink: 0; overflow: hidden; position: relative;">
+        <img src="assets/dance_collage_bg.png" alt="Student Interactions" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.1);">
+        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
+          <h4 style="font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Ensemble Sync Work</h4>
+          <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold);">APRIL 2026</span>
+        </div>
+      </div>
+
+      <!-- Photo Slide 3 -->
+      <div class="glass-panel gallery-slide" style="width: 420px; height: 280px; flex-shrink: 0; overflow: hidden; position: relative;">
+        <img src="assets/dance_luxury_collage.png" alt="Choreography sync" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.1);">
+        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
+          <h4 style="font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Post-Show Jam Session</h4>
+          <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold);">MARCH 2026</span>
+        </div>
+      </div>
+
+      <!-- Duplicate Slides for Seamless Loop -->
+      <div class="glass-panel gallery-slide" style="width: 420px; height: 280px; flex-shrink: 0; overflow: hidden; position: relative;">
+        <img src="assets/dance_luxury_collage.png" alt="Masterclass Moments" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.1);">
+        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
+          <h4 style="font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Behind The Scenes</h4>
+          <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold);">MAY 2026</span>
+        </div>
+      </div>
+
+      <div class="glass-panel gallery-slide" style="width: 420px; height: 280px; flex-shrink: 0; overflow: hidden; position: relative;">
+        <img src="assets/dance_collage_bg.png" alt="Student Interactions" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.1);">
+        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
+          <h4 style="font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Ensemble Sync Work</h4>
+          <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold);">APRIL 2026</span>
+        </div>
+      </div>
+
+      <div class="glass-panel gallery-slide" style="width: 420px; height: 280px; flex-shrink: 0; overflow: hidden; position: relative;">
+        <img src="assets/dance_luxury_collage.png" alt="Choreography sync" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.1);">
+        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
+          <h4 style="font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Post-Show Jam Session</h4>
+          <span style="font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--color-gold);">MARCH 2026</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CURTAIN DIVIDER -->
+  <div class="curtain-divider">
+    <svg class="curtain-svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,0 C120,40 240,60 360,60 C480,60 600,20 720,50 C840,80 960,30 1080,40 C1200,50 1320,60 1440,0 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <!-- SHARED GUILD FOOTER -->
+  <footer class="guild-footer">
+    <div class="container">
+      <div class="footer-guild-name">THE DANZO PERFORMING ARTS GUILD</div>
+      <p class="footer-meta">&copy; 2026 Danzo Dance Academy. Crafting Cinematic Dancers. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
