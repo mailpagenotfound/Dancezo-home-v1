@@ -1,3 +1,4 @@
+// GitHub Actions deployment trigger
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
