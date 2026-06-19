@@ -1,7 +1,4 @@
-"use client";
 import {FC} from "react";
-
-import Image from "next/image";
 
 // Types
 interface iCardItem {
@@ -59,11 +56,10 @@ const Card: FC<iCardProps> = ({
 					{description}
 				</div>
 				<div className="absolute inset-0 z-0">
-					<Image
+					<img
 						className="w-full h-full object-cover"
 						src={src}
 						alt="Background"
-						layout="fill"
 					/>
 				</div>
 			</div>
